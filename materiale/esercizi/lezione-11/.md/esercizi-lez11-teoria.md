@@ -31,7 +31,7 @@ Calcolare l'aspettazione del risultato del lancio di un dado nei seguenti casi:
     &= \frac{21}{6} = \boxed{3.5} \;.
     \end{aligned}$$
 
-    ![Dado Equo](./Dado_Equo.png)
+    ![Dado Equo](./img/Dado_Equo.png)
 
 2. **Dado non equiprobabile**
 
@@ -42,7 +42,7 @@ Calcolare l'aspettazione del risultato del lancio di un dado nei seguenti casi:
     &= \frac{15}{10} + 3 = \boxed{4.5} \;.
     \end{aligned}$$
 
-    ![Dado Non Equo](./Dado_NonEquo.png)
+    ![Dado Non Equo](./img/Dado_NonEquo.png)
 
 ---
 
