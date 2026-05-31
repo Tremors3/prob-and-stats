@@ -1,4 +1,4 @@
-## $$ \textcolor{red}{\text{Esercizi Ex. 11 - Lez. 7,10,11}} $$
+## $$ \textcolor{red}{\text{Esercizi Ex. 11 - Lez. 7,11,12}} $$
 
 #### Esercizio 1
 

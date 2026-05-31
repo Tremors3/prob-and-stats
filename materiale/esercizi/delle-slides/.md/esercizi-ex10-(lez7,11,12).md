@@ -1,4 +1,4 @@
-## $$ \textcolor{red}{\text{Esercizi Lez. 7 - Ex 10}} $$
+## $$ \textcolor{red}{\text{Esercizi Ex. 10 - Lez. 7,11,12}} $$
 
 #### Esercizio 1
 
@@ -293,7 +293,7 @@ $$
     Y=1000\cdot100-9000X.
     $$
 
-    > **Nota.** Per risolvere questo punto occorre conoscere le proprietà dell'aspettazione e della varianza delle trasformazioni lineari di una variabile aleatoria (capitoli 10,11 della teoria).
+    > **Nota.** Per risolvere questo punto occorre conoscere le proprietà dell'aspettazione e della varianza delle trasformazioni lineari di una variabile aleatoria (capitoli **11**,**12** della teoria).
 
     - Calcolo della media $\mu_Y=E[Y]$.
 
