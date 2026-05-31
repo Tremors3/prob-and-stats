@@ -1,4 +1,5 @@
-## $$ \textcolor{red}{\text{Esercizi Lez. XX - XXXX}} $$
+## $$ \textcolor{red}{\text{Esercizi Ex. XX - Lez. XX,XX,XX}} $$
+## $$ \textcolor{red}{\text{Esercizi Lez. XX - Teoria}} $$
 
 #### Esercizio X
 
