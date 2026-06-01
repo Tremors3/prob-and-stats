@@ -26,7 +26,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
     k\in S_X=\{1,2,3,4,5,6\}.
     $$
 
-    - Calcoliamo la FGM di $X$:
+    - **Calcoliamo la FGM:**
 
         $$\begin{aligned}
         G_X(t)
@@ -36,12 +36,14 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
         &=\boxed{\frac16\left(e^t+e^{2t}+e^{3t}+e^{4t}+e^{5t}+e^{6t}\right)} \;.
         \end{aligned}$$
 
-    - Calcoliamo adesso il momento primo:
+    - **Primo momento:**
 
         $$\begin{aligned}
         G'_X(t)
         &=\frac16\left(e^t+2e^{2t}+3e^{3t}+4e^{4t}+5e^{5t}+6e^{6t}\right).
         \end{aligned}$$
+
+        <div style="page-break-after: always;"></div>
 
         Sostituiamo $t=0$ e otteniamo il momento primo:
 
@@ -53,7 +55,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
         &=\boxed{\frac72=3.5} \;.
         \end{aligned}$$
 
-    - Calcoliamo adesso il momento secondo:
+    - **Secondo momento:**
 
         $$\begin{aligned}
         G''_X(t)
@@ -77,7 +79,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
     Y\sim\text{Ber}(p)
     $$
 
-    - Calcoliamo la FGM di $Y$:
+    - **Calcoliamo la FGM:**
 
         $$\begin{aligned}
         G_Y(t)
@@ -88,7 +90,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
         &=\boxed{pe^t+(1-p)} \;.
         \end{aligned}$$
 
-    - Calcoliamo adesso il momento primo:
+    - **Primo momento:**
 
         $$\begin{aligned}
         G'_Y(t)
@@ -104,7 +106,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
         &=\boxed{p} \;.
         \end{aligned}$$
 
-    - Calcoliamo adesso il momento secondo:
+    - **Secondo momento:**
 
         $$\begin{aligned}
         G''_Y(t)
@@ -138,7 +140,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
     k=1,2,\ldots
     $$
 
-    - Calcoliamo la FGM di $Z$:
+    - **Calcoliamo la FGM:**
 
         $$\begin{aligned}
         G_Z(t)
@@ -177,7 +179,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
         \;.
         \end{aligned}$$
 
-    - Calcoliamo adesso il momento primo:
+    - **Primo momento:**
 
         $$\begin{aligned}
         G'_Z(t)
@@ -199,7 +201,7 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
         &=\boxed{\frac1p} \;.
         \end{aligned}$$
 
-    - Calcoliamo adesso il momento secondo:
+    - **Secondo momento:**
 
         $$\begin{aligned}
         G''_Z(t) &= \frac{pe^t(1-e^t(1-p))^2 - pe^t\Big[2(1-e^t(1-p))(-e^t(1-p))\Big] }{(1-e^t(1-p))^4} \\
@@ -208,19 +210,19 @@ Calcolare la FGM e i momenti primo e secondo delle seguenti variabili aleatorie:
         &= \frac{pe^t (1 + e^t(1-p)) }{(1-e^t(1-p))^3} \\
         \end{aligned}$$
 
+        <div style="page-break-after: always;"></div>
+
         Sostituiamo $t=0$ e otteniamo il momento secondo:
 
         $$\begin{aligned}
         E[Z^2] = G''_Z(0) &= \frac{pe^0 (1 + e^0(1-p)) }{(1-e^0(1-p))^3} \\
         &= \frac{p(1+(1-p))}{(1-(1-p))^3} \\
-        &= \frac{2p-p^2}{p^3} \\
-        &= \frac{p(2-p)}{p^3} \\
-        &= \boxed{
+        &= \frac{2p-p^2}{p^3}
+        = \frac{p(2-p)}{p^3}
+        = \boxed{
             \frac{2-p}{p^2}
         } \;.
         \end{aligned}$$
-
-<div style="page-break-after: always;"></div>
 
 > **Nota**. Non era necessario calcolare esplicitamente questi momenti dato che sulla tabella che potremo usare all'esame la prof ci fornisce già aspettazione e varianza. Tuttavia è un esercizio utile perché mostra come ricavare i momenti direttamente dalla FGM.
 
@@ -415,6 +417,8 @@ Calcolare la FGM e i momenti delle seguenti variabili aleatorie:
         \end{cases}} \;.
         $$
 
+<div style="page-break-after: always;"></div>
+
 - **Primo momento:**
 
     $$\begin{aligned}
@@ -442,8 +446,6 @@ Calcolare la FGM e i momenti delle seguenti variabili aleatorie:
     E[X^2]=G''_X(0)=\frac{2\lambda}{\lambda^3}=\frac{2}{\lambda^2}
     $$
 
-<div style="page-break-after: always;"></div>
-
 6. **Calcolare i momenti di $Y$**.
 
     Sia
@@ -468,6 +470,133 @@ Calcolare la FGM e i momenti delle seguenti variabili aleatorie:
 
     > **Nota**. La FGM non esiste per $t>0$ perché l’integrale diverge. Quindi:
     > $$ G_Y(t) \text{ esiste solo per } t \le 0 $$
+
+---
+
+<div style="page-break-after: always;"></div>
+
+#### Esercizio 3 $-$ Calcolo dei momenti
+
+Tramite il metodo della FGM calcolare
+
+7. il momento terzo di $Z \sim N(0,1)$  
+8. il momento terzo di $Y \sim \text{Exp}(\lambda)$  
+9. il valore atteso di $X \sim U(0,1)$  
+
+##### Risoluzione
+
+7. **Momento terzo di $Z \sim N(0,1)$.**
+
+    La FGM della normale standard è:
+
+    $$
+    G_Z(t)=e^{\frac{t^2}{2}}
+    $$
+
+    Calcoliamo le derivate successive:
+
+    $$\begin{aligned}
+    G'_Z(t) &= t e^{\frac{t^2}{2}} \\
+    G''_Z(t) &= 1\cdot e^{\frac{t^2}{2}} + t\left(t e^{\frac{t^2}{2}}\right) \\
+    &= (1 + t^2)e^{\frac{t^2}{2}} \\
+    G'''_Z(t) &= (0+2t)e^{\frac{t^2}{2}} + (1+t^2)\cdot t e^{\frac{t^2}{2}} \\
+    &= 2t e^{\frac{t^2}{2}} + (t+t^3)e^{\frac{t^2}{2}} \\
+    &= (3t+t^3)e^{\frac{t^2}{2}}
+    \end{aligned}$$
+
+    Valutiamo in $t=0$:
+
+    $$
+    E[Z^3] = G'''_Z(0) = \boxed{0} \;.
+    $$
+
+8. **Momento terzo di $Y \sim \text{Exp}(\lambda)$.**
+
+    La FGM dell'esponenziale:
+
+    $$
+    G_Y(t)=\frac{\lambda}{\lambda - t} = \lambda(\lambda - t)^{-1}
+    $$
+
+    <div style="page-break-after: always;"></div>
+
+    Calcoliamo le derivate successive:
+
+    $$\begin{aligned}
+    G'_Y(t) 
+    &= \lambda \cdot (-1)(\lambda - t)^{-2}\cdot(-1) \\
+    &= \lambda(\lambda - t)^{-2}
+    \\
+    G''_Y(t)
+    &= \lambda \cdot (-2)(\lambda - t)^{-3}\cdot(-1) \\
+    &= 2\lambda(\lambda - t)^{-3}
+    \\
+    G'''_Y(t)
+    &= \lambda \cdot (-3)(-2)(\lambda - t)^{-4}\cdot(-1) \\
+    &= 6\lambda(\lambda - t)^{-4}
+    \end{aligned}$$
+
+    Valutiamo in $t=0$:
+
+    $$
+    E[Y^3] = G'''_Y(0)
+    = \frac{6\lambda}{\lambda^4}
+    = \boxed{
+    \frac{6}{\lambda^3}
+    } \;.
+    $$
+
+9. **Valore atteso di $X \sim U(0,1)$.**
+
+    $$\begin{aligned}
+    G_X(t) = E[e^{tX}]
+    &= \int_0^1 e^{tx}\,dx
+    = \left[\frac{e^{tx}}{t}\right]_0^1
+    = \frac{e^t - 1}{t}
+    \end{aligned}$$
+
+    Derivata:
+
+    $$\begin{aligned}
+    G'_X(t)
+    &= \frac{t e^t - (e^t - 1)}{t^2}
+    \end{aligned}$$
+
+    Valutiamo il limite per $t\to 0$:
+
+    $$
+    E[X] = G'_X(0)
+    = \lim_{t\to0}
+    \frac{t e^t-(e^t-1)}{t^2}
+    $$
+
+    Usiamo lo sviluppo di Taylor di $e^t$ attorno a $0$:
+
+    $$
+    e^t = 1+t+\frac{t^2}{2}+o(t^2)
+    $$
+
+    <div style="page-break-after: always;"></div>
+
+    Sostituendo nel numeratore:
+
+    $$\begin{aligned}
+    t e^t-(e^t-1)
+    &= t\left(1+t+\frac{t^2}{2}+o(t^2)\right)
+    -\left(t+\frac{t^2}{2}+o(t^2)\right) \\
+    &= t+t^2+\frac{t^3}{2}
+    -t-\frac{t^2}{2}+o(t^2) \\
+    &= \frac{t^2}{2}+o(t^2)
+    \end{aligned}$$
+
+    Quindi
+
+    $$\begin{aligned}
+    E[X]
+    &= \lim_{t\to0} \frac{\frac{t^2}{2}+o(t^2)}{t^2}
+    = \frac{\frac{t^2}2}{t^2}
+    = \boxed{\frac12} \;.
+    \end{aligned}$$
 
 ---
 
