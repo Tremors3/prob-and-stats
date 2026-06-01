@@ -289,7 +289,7 @@ Calcolare la FGM e i momenti delle seguenti variabili aleatorie:
     \mu=0, \qquad \sigma^2=1
     $$
 
-    - Calcoliamo la FGM di $Z$:
+    - **Calcoliamo la FGM di $Z$:**
 
         $$\begin{aligned}
         G_Z(t) = E[e^{tZ}]
@@ -343,7 +343,7 @@ Calcolare la FGM e i momenti delle seguenti variabili aleatorie:
         G_Z(t) = \boxed{e^{\frac{t^2}{2}}} \;.
         $$
 
-    - Primo momento:
+    - **Primo momento:**
 
         $$
         G_Z'(t) = t e^{\frac{t^2}{2}}
@@ -353,7 +353,7 @@ Calcolare la FGM e i momenti delle seguenti variabili aleatorie:
         E[Z] = G_Z'(0) = \boxed{0} \;.
         $$
 
-    - Secondo momento:
+    - **Secondo momento:**
 
         $$\begin{aligned}
         G_Z''(t)
@@ -366,7 +366,108 @@ Calcolare la FGM e i momenti delle seguenti variabili aleatorie:
         E[Z^2] = G_Z''(0) = \boxed{1} \;.
         $$
 
+<div style="page-break-after: always;"></div>
 
+5. **Calcolare la FGM e i momenti di $X$**.
+
+    Sia $X \sim \text{Exp}(\lambda)$ con densità:
+
+    $$
+    f(x)=\lambda e^{-\lambda x}, \quad x\ge 0
+    $$
+
+    - **Calcoliamo la FGM:**
+
+        $$\begin{aligned}
+        G_X(t) = E[e^{tX}]
+        &= \int_0^{+\infty} e^{tx}\, \lambda e^{-\lambda x}\, dx \\
+        &= \lambda \int_0^{+\infty} e^{tx-\lambda x}\, dx \\
+        &= \lambda \int_0^{+\infty} e^{-(\lambda - t)x}\, dx
+        \end{aligned}$$
+
+        - **Caso $\lambda - t > 0$ (cioè $t < \lambda$):**
+
+            $$\begin{aligned}
+            G_X(t)
+            &= \lambda \int_0^{+\infty} e^{-(\lambda - t)x}\, dx \\
+            &= \lambda \cdot \frac{1}{\lambda - t}
+            \underbrace{
+            \int_0^{+\infty} (\lambda-t)e^{-(\lambda - t)x}\, dx
+            }_1 \\
+            &= \lambda \cdot \frac{1}{\lambda - t}, \quad t<\lambda
+            \end{aligned}$$
+
+        - **Caso $\lambda - t \le 0$ (cioè $t \ge \lambda$):**
+
+            l’integrale diverge, quindi:
+
+            $$
+            G_X(t)=+\infty
+            $$
+
+        In generale abbiamo:
+
+        $$
+        G_X(t)=
+        \boxed{\begin{cases}
+        \frac{\lambda}{\lambda-t} & t<\lambda \\
+        +\infty & t\ge \lambda
+        \end{cases}} \;.
+        $$
+
+- **Primo momento:**
+
+    $$\begin{aligned}
+    G'_X(t)
+    &= \lambda \cdot (\lambda-t)^{-1} \\
+    &= \lambda \cdot \big[-1(\lambda-t)^{-2}\cdot(-1)\big] \\
+    &= \lambda (\lambda-t)^{-2} \\
+    &= \frac{\lambda}{(\lambda-t)^2}
+    \end{aligned}$$
+
+    $$
+    E[X]=G'_X(0)=\frac{\lambda}{\lambda^2}=\frac{1}{\lambda}
+    $$
+
+- **Secondo momento:**
+
+    $$\begin{aligned}
+    G''_X(t)
+    &= \lambda \cdot (-2)(\lambda-t)^{-3}\cdot(-1) \\
+    &= 2\lambda (\lambda-t)^{-3} \\
+    &= \frac{2\lambda}{(\lambda-t)^3}
+    \end{aligned}$$
+
+    $$
+    E[X^2]=G''_X(0)=\frac{2\lambda}{\lambda^3}=\frac{2}{\lambda^2}
+    $$
+
+<div style="page-break-after: always;"></div>
+
+6. **Calcolare i momenti di $Y$**.
+
+    Sia
+
+    $$
+    Y \sim \text{Par}(\alpha)
+    $$
+
+    con densità:
+
+    $$
+    f(x)=\frac{\alpha}{x^{\alpha+1}}, \quad x\ge 1
+    $$
+
+    - **Calcoliamo la FGM:**
+
+        $$\begin{aligned}
+        G_Y(t)
+        &= \int_1^{+\infty} e^{tx}\frac{\alpha}{x^{\alpha+1}}dx
+        = +\infty
+        \end{aligned}$$
+
+    > **Nota**. La FGM non esiste per $t>0$ perché l’integrale diverge. Quindi:
+    > $$ G_Y(t) \text{ esiste solo per } t \le 0 $$
 
 ---
 
