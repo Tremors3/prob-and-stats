@@ -1,4 +1,4 @@
-## $$ \textcolor{red}{\text{Ripasso derivate}} $$
+## $$ \textcolor{red}{\text{Ripasso derivate di base}} $$
 
 > Fonte esercizi:
 > https://www.math-exercises.com/limits-derivatives-integrals/derivative-of-a-function
