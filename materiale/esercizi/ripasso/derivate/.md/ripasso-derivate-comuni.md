@@ -13,7 +13,7 @@ f'(x)
 \end{aligned}
 }$$
 
-3. $$\boxed{
+2. $$\boxed{
 \begin{aligned}
 f(x)
 &= (x^2+1)^3e^{-x^2} + x\ln(e^x+1)
