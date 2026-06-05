@@ -90,7 +90,7 @@ $$
 
 <div style="page-break-after: always;"></div>
 
-### $\textcolor{blue}{\text{Casi Contunui}}$
+### $\textcolor{blue}{\text{Casi Continui}}$
 
 ---
 
