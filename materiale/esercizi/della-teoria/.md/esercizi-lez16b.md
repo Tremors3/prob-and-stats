@@ -266,3 +266,441 @@ Calcolare:
 <div style="page-break-after: always;"></div>
 
 ### $$ \textcolor{blue}{\text{Esercizi Aspettazione - Casi Continui}} $$
+
+#### Esercizio 4
+
+Siano $X$ ed $Y$ due v.a. a.c. la cui densità congiunta è
+
+$$
+f_{X,Y}(x,y) =
+\begin{cases}
+\frac{12}5 xy(1+y) & \text{per } (x,y)\in[0,1]^2 \\
+0 & \text{altrimenti}
+\end{cases}
+$$
+
+Calcolare $E[YX + X^2]$.
+
+##### Risoluzione
+
+Per la linearità dell'aspettazione abbiamo che:
+
+$$
+E[YX + X^2] = E[YX] + E[X^2].
+$$
+
+1. **Calcoliamo le due aspettazioni.**
+
+    $$\begin{aligned}
+    E[YX]
+    &= \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}
+    xy\,f_{X,Y}(x,y)\,dy\,dx \\
+    &= \int_0^1 \left(
+    \int_0^1 xy\cdot\frac{12}{5}xy(1+y)\,dy
+    \right)dx \\
+    &= \frac{12}{5}\int_0^1 x^2
+    \left(
+    \int_0^1 (y^2+y^3)\,dy
+    \right)dx \\
+    &= \frac{12}{5}\int_0^1 x^2
+    \left[
+    \frac{y^3}{3}+\frac{y^4}{4}
+    \right]_0^1 dx \\
+    &= \frac{12}{5}
+    \left(
+    \frac13+\frac14
+    \right)
+    \int_0^1 x^2\,dx \\
+    &= \frac{12}{5}\cdot\frac{7}{12}
+    \left[
+    \frac{x^3}{3}
+    \right]_0^1 \\
+    &= \frac75\cdot\frac13 \\
+    &= \boxed{\frac{7}{15}} \;.
+    \end{aligned}$$
+
+    $$\begin{aligned}
+    E[X^2]
+    &= \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}
+    x^2\,f_{X,Y}(x,y)\,dy\,dx \\
+    &= \int_0^1 \left(
+    \int_0^1 x^2\cdot\frac{12}{5}xy(1+y)\,dy
+    \right)dx \\
+    &= \frac{12}{5}
+    \int_0^1 x^3
+    \left(
+    \int_0^1 (y+y^2)\,dy
+    \right)dx \\
+    &= \frac{12}{5}
+    \int_0^1 x^3
+    \left[
+    \frac{y^2}{2}+\frac{y^3}{3}
+    \right]_0^1 dx \\
+    &= \frac{12}{5}
+    \left(
+    \frac12+\frac13
+    \right)
+    \int_0^1 x^3\,dx \\
+    &= \frac{12}{5}\cdot\frac56
+    \left[
+    \frac{x^4}{4}
+    \right]_0^1 \\
+    &= 2\cdot\frac14 \\
+    &= \boxed{\frac12} \;.
+    \end{aligned}$$
+
+2. **Calcoliamo l'aspettazione richiesta:**
+
+    $$\begin{aligned}
+    E[YX + X^2]
+    &= E[YX] + E[X^2] \\
+    &= \frac{7}{15} + \frac12 \\
+    &= \frac{14}{30}+\frac{15}{30} \\
+    &= \boxed{\frac{29}{30}} \;.
+    \end{aligned}$$
+
+---
+
+<div style="page-break-after: always;"></div>
+
+#### Esercizio 5
+
+Siano $X$ ed $Y$ due v.a. a.c. la cui densità di probabilità congiunta è
+
+$$
+f_{X,Y}(x,y)=
+\frac1{10}(3x^2+8xy)
+\quad\text{per}\quad
+\begin{aligned}
+0\le x\le1 \\
+0\le y\le2
+\end{aligned}
+$$
+
+e uguale a $0$ per gli altri valori di $x$ ed $y$.
+
+Calcolare $E[YX + X^2]$.
+
+##### Risoluzione
+
+Per la linearità dell'aspettazione abbiamo che
+
+$$
+E[YX + X^2] = E[YX] + E[X^2].
+$$
+
+1. **Calcoliamo separatamente le due aspettazioni.**
+
+    $$\begin{aligned}
+    E[YX]
+    &= \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}
+    xy\,f_{X,Y}(x,y)\,dy\,dx \\
+    &= \int_0^1 \left(
+    \int_0^2 xy\cdot \frac1{10}(3x^2+8xy)\,dy
+    \right)dx \\
+    &= \frac1{10}\int_0^1
+    \left(
+    \int_0^2 (3x^3y+8x^2y^2)\,dy
+    \right)dx \\
+    &= \frac1{10}\int_0^1
+    \left(
+    3x^3\int_0^2 y\,dy
+    +
+    8x^2\int_0^2 y^2\,dy
+    \right)dx \\
+    &= \frac1{10}\int_0^1
+    \left(
+    3x^3\left[\frac{y^2}{2}\right]_0^2
+    +
+    8x^2\left[\frac{y^3}{3}\right]_0^2
+    \right)dx \\
+    &= \frac1{10}\int_0^1
+    \left(
+    6x^3+\frac{64}{3}x^2
+    \right)dx \\
+    &= \frac1{10}
+    \left(
+    6\int_0^1 x^3\,dx
+    +
+    \frac{64}{3}\int_0^1 x^2\,dx
+    \right) \\
+    &= \frac1{10}
+    \left(
+    6\left[\frac{x^4}{4}\right]_0^1
+    +
+    \frac{64}{3}\left[\frac{x^3}{3}\right]_0^1
+    \right) \\
+    &= \frac1{10}
+    \left(
+    \frac32+\frac{64}{9}
+    \right) \\
+    &= \boxed{\frac{31}{36}} \;.
+    \end{aligned}$$
+
+    $$\begin{aligned}
+    E[X^2]
+    &= \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}
+    x^2\,f_{X,Y}(x,y)\,dy\,dx \\
+    &= \int_0^1 \left(
+    \int_0^2 x^2\cdot\frac1{10}(3x^2+8xy)\,dy
+    \right)dx \\
+    &= \frac1{10}\int_0^1
+    \left(
+    3x^4\int_0^2 dy
+    +
+    8x^3\int_0^2 y\,dy
+    \right)dx \\
+    &= \frac1{10}\int_0^1
+    \left(
+    3x^4\,[y]_0^2
+    +
+    8x^3\left[\frac{y^2}{2}\right]_0^2
+    \right)dx \\
+    &= \frac1{10}\int_0^1
+    \left(
+    6x^4+16x^3
+    \right)dx \\
+    &= \frac1{10}
+    \left(
+    6\left[\frac{x^5}{5}\right]_0^1
+    +
+    16\left[\frac{x^4}{4}\right]_0^1
+    \right) \\
+    &= \frac1{10}
+    \left(
+    \frac65+4
+    \right) \\
+    &= \boxed{\frac{13}{25}} \;.
+    \end{aligned}$$
+
+2. **Calcoliamo l'aspettazione richiesta.**
+
+    $$\begin{aligned}
+    E[YX + X^2]
+    &= E[YX] + E[X^2] \\
+    &= \frac{31}{36} + \frac{13}{25} \\
+    &= \boxed{\frac{1243}{900}}
+    \approx 1.381 \;.
+    \end{aligned}$$
+
+---
+
+<div style="page-break-after: always;"></div>
+
+#### Esercizio 6
+
+Siano $X$ ed $Y$ due v.a. a.c. la cui distribuzione congiunta è
+
+$$
+F_{X,Y}(x,y) = 
+\begin{cases}
+1-e^{-2x}-e^{-y}+e^{-(2x+y)} & \text{per } x,y>0 \\
+0 & \text{altrimenti}
+\end{cases}
+$$
+
+Calcolare $E[e^{-(X+Y)}+e^{-3X}]$.
+
+##### Risoluzione
+
+Per la linearità dell'aspettazione abbiamo che
+
+$$
+E[e^{-(X+Y)}+e^{-3X}]
+= E[e^{-(X+Y)}] + E[e^{-3X}].
+$$
+
+1. **Ricaviamo la funzione di densità congiunta.**
+
+    $$\begin{aligned}
+    f_{X,Y}(x,y)
+    &= \frac{\partial^2}{\partial x\,\partial y}F_{X,Y}(x,y) \\
+    &= \frac{\partial}{\partial y}\left(
+    \frac{\partial}{\partial x}
+    (1-e^{-2x}-e^{-y}+e^{-2x}e^{-y})
+    \right) \\
+    &= \frac{\partial}{\partial y}\left(
+    2e^{-2x}-2e^{-2x}e^{-y}
+    \right) \\
+    &= 2e^{-2x}e^{-y}.
+    \end{aligned}$$
+
+    Quindi
+
+    $$
+    \boxed{
+    f_{X,Y}(x,y)=2e^{-2x}e^{-y}
+    }
+    \qquad \text{per } x,y>0.
+    $$
+
+<div style="page-break-after: always;"></div>
+
+2. **Calcoliamo separatamente le due aspettazioni.**
+
+    $$\begin{aligned}
+    E[e^{-(X+Y)}]
+    &= \int_{-\infty}^{+\infty}
+    \int_{-\infty}^{+\infty}
+    e^{-(x+y)}f_{X,Y}(x,y)\,dy\,dx \\
+    &= \int_0^{+\infty}
+    \int_0^{+\infty}
+    e^{-x}e^{-y}\,2e^{-2x}e^{-y}
+    \,dy\,dx \\
+    &= \int_0^{+\infty}
+    \int_0^{+\infty}
+    2e^{-3x}e^{-2y}
+    \,dy\,dx \\
+    &= \int_0^{+\infty}
+    2e^{-3x}
+    \left[\!-\frac12e^{-2y}\right]_0^{+\infty}
+    dx \\
+    &= \int_0^{+\infty}
+    e^{-3x}\,dx \\
+    &= \left[\!-\frac13e^{-3x}\right]_0^{+\infty} \\
+    &= \boxed{\frac13}.
+    \end{aligned}$$
+
+    $$\begin{aligned}
+    E[e^{-3X}]
+    &= \int_{-\infty}^{+\infty}
+    \int_{-\infty}^{+\infty}
+    e^{-3x}f_{X,Y}(x,y)\,dy\,dx \\
+    &= \int_0^{+\infty}
+    \int_0^{+\infty}
+    e^{-3x}\,2e^{-2x}e^{-y}
+    \,dy\,dx \\
+    &= \int_0^{+\infty}
+    \int_0^{+\infty}
+    2e^{-5x}e^{-y}
+    \,dy\,dx \\
+    &= \int_0^{+\infty}
+    2e^{-5x}
+    \left[-e^{-y}\right]_0^{+\infty}
+    dx \\
+    &= \int_0^{+\infty}
+    2e^{-5x}\,dx \\
+    &= \left[\!-\frac25e^{-5x}\right]_0^{+\infty} \\
+    &= \boxed{\frac25}.
+    \end{aligned}$$
+
+<div style="page-break-after: always;"></div>
+
+
+3. **Calcoliamo l'aspettazione richiesta.**
+
+    $$\begin{aligned}
+    E[e^{-(X+Y)}+e^{-3X}]
+    &= E[e^{-(X+Y)}] + E[e^{-3X}] \\
+    &= \frac13+\frac25 \\
+    &= \boxed{\frac{11}{15}}.
+    \end{aligned}$$
+
+---
+
+<div style="page-break-after: always;"></div>
+
+#### Esercizio 7
+
+Siano $X$, $Y$ e $Z$ tre v.a. a.c. la cui densità congiunta è
+
+$$
+f_{X,Y,Z}(x,y,z) =
+\begin{cases}
+\frac23(x+y+z) & \text{per } (x,y,z)\in[0,1]^3 \\
+0 & \text{altrimenti}
+\end{cases}
+$$
+
+Calcolare $E[XYZ]$.
+
+##### Risoluzione
+
+Calcoliamo l'aspettazione richiesta.
+
+$$\begin{aligned}
+E[XYZ]
+&=
+\int_{-\infty}^{+\infty}
+\int_{-\infty}^{+\infty}
+\int_{-\infty}^{+\infty}
+xyz\,f_{X,Y,Z}(x,y,z)\,dz\,dy\,dx \\
+&=
+\int_0^1
+\int_0^1
+\int_0^1
+xyz\,\frac23(x+y+z)
+\,dz\,dy\,dx \\
+&=
+\frac23
+\int_0^1
+\int_0^1
+\int_0^1
+\left(x^2yz+xy^2z+xyz^2\right)
+\,dz\,dy\,dx
+\end{aligned}$$
+
+Calcoliamo uno dei tre integrali. Gli altri si ottengono per simmetria e hanno lo stesso valore.
+
+$$\begin{aligned}
+\int_0^1
+\int_0^1
+\int_0^1
+x^2yz
+\,dz\,dy\,dx
+&=
+\int_0^1
+\int_0^1
+x^2y
+\left(
+\int_0^1 z\,dz
+\right)
+dy\,dx \\
+&=
+\frac12
+\int_0^1
+\int_0^1
+x^2y
+\,dy\,dx \\
+&=
+\frac12
+\int_0^1
+x^2
+\left(
+\int_0^1 y\,dy
+\right)
+dx \\
+&=
+\frac14
+\int_0^1 x^2\,dx \\
+&=
+\frac14
+\left[\frac{x^3}{3}\right]_0^1 \\
+&=
+\frac14\cdot\frac13 \\
+&=
+\frac1{12}
+\end{aligned}$$
+
+Pertanto
+
+$$\begin{aligned}
+E[XYZ]
+&=
+\frac23
+\left(
+\frac1{12}
++
+\frac1{12}
++
+\frac1{12}
+\right) \\
+&=
+\frac23\cdot\frac3{12} \\
+&=
+\boxed{\frac16} \;.
+\end{aligned}$$
+
+---
+
+<div style="page-break-after: always;"></div>
