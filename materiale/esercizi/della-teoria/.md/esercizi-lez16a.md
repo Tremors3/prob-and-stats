@@ -480,7 +480,90 @@ Determinare se $X$ ed $Y$ sono indipendenti.
 
 <div style="page-break-after: always;"></div>
 
-#### Esercizio 7 $-$ Indipendenza tra 3 v.a. congiunte
+#### Esercizio 7 $-$ Indipendenza v.a. congiunte
+
+Siano $X$ ed $Y$ due v.a. a.c. la cui distribuzione congiunta è
+
+$$
+F_{X,Y}(x,y) = 
+\begin{cases}
+1-e^{-2x}-e^{-y}+e^{-(2x+y)} & \text{per } x,y>0 \\
+0 & \text{altrimenti}
+\end{cases}
+$$
+
+Determinare se $X$ ed $Y$ sono indipendenti.
+
+##### Risoluzione
+
+1. **Ricaviamo la funzione di densità congiunta.**
+
+    $$\begin{aligned}
+    f_{X,Y}(x,y)
+    &= \frac{\partial^2}{\partial x\,\partial y} F_{X,Y}(x,y) \\
+    &= \frac{\partial}{\partial y}\left(
+        \frac{\partial}{\partial x}
+        (1-e^{-2x}-e^{-y}+e^{-2x}e^{-y})
+    \right) \\
+    &= \frac{\partial}{\partial y}\left(
+        2e^{-2x}-2e^{-2x}e^{-y}
+    \right) \\
+    &= 0+2e^{-2x}e^{-y} \\
+    &= \boxed{2e^{-2x}e^{-y}}
+    \qquad \text{per } x,y>0 \;.
+    \end{aligned}$$
+
+2. **Calcoliamo le densità marginali di $X$ e $Y$.**
+
+    $$\begin{aligned}
+    f_X(x)
+    &= \int_{-\infty}^{+\infty} f_{X,Y}(x,y)\,dy \\
+    &= \int_0^{+\infty} 2e^{-2x}e^{-y}\,dy \\
+    &= 2e^{-2x}\int_0^{+\infty} e^{-y}\,dy \\
+    &= 2e^{-2x}\left[-e^{-y}\right]_0^{+\infty} \\
+    &= 2e^{-2x}(0-(-1)) \\
+    &= \boxed{2e^{-2x}}
+    \qquad \text{per } x>0 \;.
+    \end{aligned}$$
+
+    $$\begin{aligned}
+    f_Y(y)
+    &= \int_{-\infty}^{+\infty} f_{X,Y}(x,y)\,dx \\
+    &= \int_0^{+\infty} 2e^{-2x}e^{-y}\,dx \\
+    &= e^{-y}\int_0^{+\infty} 2e^{-2x}\,dx \\
+    &= e^{-y}\left[-e^{-2x}\right]_0^{+\infty} \\
+    &= e^{-y}(0-(-1)) \\
+    &= \boxed{e^{-y}}
+    \qquad \text{per } y>0 \;.
+    \end{aligned}$$
+
+3. **Verifichiamo la condizione di indipendenza.**
+
+    $$\begin{aligned}
+    f_X(x)\cdot f_Y(y)
+    &= 2e^{-2x}\cdot e^{-y} \\
+    &= 2e^{-2x}e^{-y} \\
+    &= f_{X,Y}(x,y).
+    \end{aligned}$$
+
+    Poiché
+
+    $$
+    f_{X,Y}(x,y)=f_X(x)\,f_Y(y)
+    \qquad \forall x,y>0,
+    $$
+
+    la condizione di indipendenza è soddisfatta.
+
+    $$
+    \boxed{X \text{ ed } Y \text{ sono indipendenti}} \;.
+    $$
+
+---
+
+<div style="page-break-after: always;"></div>
+
+#### Esercizio 8 $-$ Indipendenza tra 3 v.a. congiunte
 
 Siano $X$, $Y$ e $Z$ tre v.a. a.c. la cui densità congiunta è
 
@@ -570,6 +653,12 @@ $$
     \boxed{X,\;Y\text{ e }Z\text{ non sono indipendenti}} \;.
     $$
 
+---
+
+<div style="page-break-after: always;"></div>
+
+---
+
 > **Nota.** Siano $X_1,\dots,X_n$ variabili aleatorie congiunte. Sono indipendenti se e solo se
 >
 > $$
@@ -580,10 +669,6 @@ $$
 >
 > In pratica, dopo aver calcolato le marginali, basta verificare che il prodotto di tutte le densità marginali coincida con la densità congiunta.
 >
-> ---
-
-<div style="page-break-after: always;"></div>
-
 > ---
 >
 > La marginale di $X_i$ si ottiene integrando la densità congiunta rispetto a tutte le altre variabili:
