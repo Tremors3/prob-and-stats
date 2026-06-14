@@ -39,6 +39,8 @@ $$
     F_Y(t) = P(Y \le t)
     $$
 
+    <div style="page-break-after: always;"></div>
+
     - Caso $t < 0$:
 
         $\;$
@@ -48,8 +50,6 @@ $$
         $$
         F_Y(t) = 0
         $$
-
-    <div style="page-break-after: always;"></div>
 
     - Caso $t = 0$:
 
@@ -191,28 +191,34 @@ La funzione $g(x) = \min(X, 3-X)$ non è strettamente crescente o decrescente, q
     F_Y(y)
     &= P(Y \le y) \\
     &= P(\min(X,3-X) \le y) \\
-    &= P(3-y \le X \le y) \\
-    &= P(X \le y) - P(X < 3-y) \\
-    &= F_X(y) - F_X(3-y)
+    &= P(X \le y) + P(X \ge 3-y) \\
+    &= F_X(y) + (1 - F_X(3-y)) \\
     \end{aligned}$$
 
-    Troviamo $f_Y$ in termini di $F_Y$.
+    Poiché $X \sim U(0,3)$ abbiamo:
+
+    $$\begin{aligned}
+    F_Y(y)
+    &= \frac{y}{3} + \left(1 - \frac{3-y}{3}\right) \\
+    &= \frac{y}{3} + \frac{y}{3} \\
+    &= \frac{2y}{3}
+    \end{aligned}$$
+
+    Troviamo $f_Y$ derivando direttamente la funzione di ripartizione.
 
     $$\begin{aligned}
     f_Y(y)
     &= \frac{d}{dy}\left\{ F_Y(y) \right\} \\
-    &= \frac{d}{dy}\left\{ F_X(y) - F_X(3-y) \right\} \\
-    &= f_X(y) - (-f_X(3-y)) \\
-    &= f_X(y) + f_X(3-y) \\
-    &= 2 f_X(y) \\
-    &= 2\cdot\frac1{3-0} \\
-    &= \frac23
+    &= \frac{d}{dy}\left\{ \frac{2y}{3} \right\} \\
+    &= \frac{2}{3}
     \end{aligned}$$
+
+    <div style="page-break-after: always;"></div>
 
     Determiniamo ora il supporto di $Y$. Dal disegno:
 
     $$
-    0 \le Y \le \frac32
+    0 \le Y \le \frac{3}{2}
     $$
 
     Quindi:
@@ -221,7 +227,7 @@ La funzione $g(x) = \min(X, 3-X)$ non è strettamente crescente o decrescente, q
     \boxed{
     f_Y(y) =
     \begin{cases}
-    \frac23 & 0 \le y \le \frac32 \\
+    \frac{2}{3} & 0 \le y \le \frac{3}{2} \\
     0 & \text{altrimenti}
     \end{cases}
     }
@@ -236,8 +242,8 @@ La funzione $g(x) = \min(X, 3-X)$ non è strettamente crescente o decrescente, q
     E[Y]
     &= \int_0^{\frac32} y\,f_Y(y)\,dy \\
     &= \frac23 \int_0^{\frac32} y\,dy \\
-    &= \frac23 \left[\frac{y^2}{2}\right]_0^{\frac32} \\
-    &= \frac34
+    &= \frac23 \left[\frac{y^2}{2}\right]_0^{\frac32}
+    = \frac34
     \end{aligned}$$
 
     Calcoliamo poi il secondo momento:
@@ -246,8 +252,8 @@ La funzione $g(x) = \min(X, 3-X)$ non è strettamente crescente o decrescente, q
     E[Y^2]
     &= \int_0^{\frac32} y^2\,f_Y(y)\,dy \\
     &= \frac23 \int_0^{\frac32} y^2\,dy \\
-    &= \frac23 \left[\frac{y^3}{3}\right]_0^{\frac32} \\
-    &= \frac34
+    &= \frac23 \left[\frac{y^3}{3}\right]_0^{\frac32}
+    = \frac34
     \end{aligned}$$
 
     Infine:
@@ -255,9 +261,70 @@ La funzione $g(x) = \min(X, 3-X)$ non è strettamente crescente o decrescente, q
     $$\begin{aligned}
     \text{Var}(Y)
     &= E[Y^2] - (E[Y])^2 \\
-    &= \frac34 - \left(\frac34\right)^2 \\
-    &= \boxed{ \frac{3}{16} } \;.
+    &= \frac34 - \left(\frac34\right)^2
+    = \boxed{ \frac{3}{16} } \;.
     \end{aligned}$$
+
+<div style="page-break-after: always;"></div>
+
+> **Nota — Come scomporre correttamente $\max$ e $\min$**
+>
+> Se compare
+>
+> $$
+> \max(X,3-X)
+> $$
+>
+> allora:
+>
+> $$\begin{aligned}
+> \{\max(X,3-X)\le y\}
+> &=
+> \{X\le y\}
+> \cap
+> \{3-X\le y\} \\
+> &= \{X\le y\}\cap\{X\ge 3-y\} \\
+> &= \{3-y \le X \le y\}
+> \end{aligned}$$
+>
+> quindi:
+>
+> $$\begin{aligned}
+> P(\max(X,3-X)\le y)
+> &= P(3-y \le X \le y)
+> \end{aligned}$$
+>
+> ---
+>
+> Se compare
+>
+> $$
+> \min(X,3-X)
+> $$
+>
+> allora:
+>
+> $$\begin{aligned}
+> \{\min(X,3-X)\le y\}
+> &=
+> \{X\le y\}
+> \cup
+> \{3-X\le y\} \\
+> &= \{X\le y\}\cup\{X\ge 3-y\}
+> \end{aligned}$$
+>
+> quindi:
+>
+> $$\begin{aligned}
+> P(\min(X,3-X)\le y)
+> &= P(X\le y) + P(X\ge 3-y)
+> \end{aligned}$$
+>
+> **Da ricordare**
+>
+> - $\max(\cdots)\le y \;\Rightarrow\; \cap$
+> - $\min(\cdots)\le y \;\Rightarrow\; \cup$
+
 ---
 
 <div style="page-break-after: always;"></div>
