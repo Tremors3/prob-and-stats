@@ -1,3 +1,4 @@
+## $$ \textcolor{red}{\text{Esercizi Ex. 19 - Lez. 14}} $$
 
 #### Esercizio 1
 
