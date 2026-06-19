@@ -38,6 +38,8 @@ P(Z\le-2) &= \Phi(-2) = 1 - \Phi(2) \\
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 #### Esercizio 2
 
 Sia $X\sim N(4,25)$, calcolare:
@@ -51,16 +53,18 @@ $$
 Abbiamo $\mu=4$ e $\sigma=5$:
 
 1. $$\begin{aligned}
-P(Z\le 5) &= \Phi\left(\frac{5 - \mu}{\sigma}\right) = \Phi\left(\frac{5 - 4}{5}\right) \\
+P(X\le 5) &= \Phi\left(\frac{5 - \mu}{\sigma}\right) = \Phi\left(\frac{5 - 4}{5}\right) \\
 &= \Phi\left(0.20\right) = \boxed{0.57926} \;.
 \end{aligned}$$
 
 2. $$\begin{aligned}
-P(X\ge2) &= \Phi\left(\frac{2-4}{5}\right) = \Phi\left(-\frac25\right) = \Phi(-0.40) \\
-&=  1 - \Phi(0.40) = 1 - 0.65542 = \boxed{0.34458} \;.
+P(X\ge2) &= 1 - \Phi\left(\frac{2-4}{5}\right) = 1 - \Phi\left(-\frac25\right) = 1 - \left(1 - \Phi(0.40)\right) \\
+&= \Phi(0.40) = \boxed{0.65542} \;.
 \end{aligned}$$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 3
 
@@ -76,7 +80,7 @@ $$
 
     $$\begin{aligned}
     \Phi(q_{0.10}) &= 0.10 \\
-    \Phi(-q_{0.10}) &= 1-\Phi(q_{0.10}) = 1-0.10 = 0.90 \approx 0.89973 \\
+    \Phi(-q_{0.10}) &= 1-0.10 = 0.90 \approx 0.89973 \\
     -q_{0.10} &= \Phi'(0.89973) \approx 1.28 \\
     q_{0.10} &= \boxed{-1.28} \;.
     \end{aligned}$$
