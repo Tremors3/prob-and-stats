@@ -40,6 +40,8 @@ $$
 P(T=k)=\frac14\left(\frac34\right)^{k-1}
 $$
 
+<div style="page-break-after: always;"></div>
+
 - **(a)** Calcoliamo la probabilità richiesta:
 
     $$\begin{aligned}
@@ -79,8 +81,6 @@ $$
     &= \frac14\left(\frac34\right)^3
     = P(T=4)
     \end{aligned}$$
-
-    Quindi
 
     $$
     \boxed{P(T=7\mid T>3)=P(T=4)} \;.
@@ -197,6 +197,8 @@ $$
         \boxed{\sigma^2
         =8.33\times10^{-22}} \;.
         $$
+
+<div style="page-break-after: always;"></div>
 
 - **(b)** Calcolare la probabilità $P(-\sigma < X < \sigma)$.
 

@@ -5,7 +5,7 @@
 La durata di un circuito integrato ha una distribuzione esponenziale con media pari a due anni.
 
 - (a) Trova la probabilità che il circuito abbia durata di almeno ($\ge$) 3 anni.
-- (b) Dimostra che la probabilità condizionata $P(X>7\mid X>4)$ è uguale alla precedente.
+- (b) Dimostra che la probabilità $P(X>7\mid X>4)$ è uguale alla precedente.
 
 ##### Risoluzione
 
@@ -100,6 +100,8 @@ $$
     $$
     P(X>t)=e^{-\lambda t}
     $$
+
+    <div style="page-break-after: always;"></div>
 
     Quindi
 

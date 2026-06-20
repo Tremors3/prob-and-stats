@@ -45,6 +45,8 @@ E[X^2]
     &= \boxed{1.0936} \;.
     \end{aligned}$$
 
+<div style="page-break-after: always;"></div>
+
 - **(b)** Calcolo della standardizzata di $X$.
 
     Ricordiamo che:
@@ -134,6 +136,8 @@ p_X(x) : \quad
 1/10
 \end{pmatrix}
 $$
+
+<div style="page-break-after: always;"></div>
 
 - **(a)** Calcolo del numero medio di fusti acquistati:
 

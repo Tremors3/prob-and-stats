@@ -140,6 +140,8 @@ dove $\Phi$ è la funzione di ripartizione della normale standard.
     \boxed{c\approx -0.85}\;.
     \end{aligned}$$
 
+<div style="page-break-after: always;"></div>
+
 - **(b)** Calcolare $P(X<c)=0.38$:
 
     $$\begin{aligned}
@@ -236,6 +238,8 @@ dove $\Phi$ è la funzione di ripartizione della normale standard.
     &\approx \boxed{0.68}\;.
     \end{aligned}$$
 
+<div style="page-break-after: always;"></div>
+
 - **Secondo multiplo della deviazione standard**
 
     $$\begin{aligned}
@@ -315,6 +319,8 @@ $$
 
 dove $\Phi$ è la funzione di ripartizione della normale standard.
 
+<div style="page-break-after: always;"></div>
+
 - **(a)** Il peggior 25% viene escluso $\Rightarrow$ cerchiamo il quantile $0.25$:
 
     $$\begin{aligned}
@@ -354,9 +360,9 @@ dove $\Phi$ è la funzione di ripartizione della normale standard.
 
 La concentrazione di zucchero per coltivare il penicillium deve essere circa 4.9 mg/ml e, se eccede 6.0 mg/ml, il fungo muore e il processo deve essere fermato quel giorno.
 
-Trova la probabilità che il processo sia fermato:
-- (a) se la concentrazione di zucchero è normale con media 4.9 e varianza 0.36
-- (b) se la concentrazione di zucchero è normale con media 5.2 e deviazione standard 0.4.
+Trova la probabilità che il processo sia fermato se la concentrazione di zucchero é:
+- (a) normale con media 4.9 e varianza 0.36
+- (b) normale con media 5.2 e deviazione standard 0.4.
 
 ##### Risoluzione
 
@@ -383,8 +389,8 @@ $$
     &= 1 - P(X\le 6) \\
     &= 1 - \Phi\!\left(\frac{6-4.9}{0.6}\right) \\
     &= 1 - \Phi(1.8333) \\
-    &\approx 1 - 0.96638 \\
-    &= \boxed{0.03362}\;.
+    &\approx 1 - 0.96638
+    = \boxed{0.03362}\;.
     \end{aligned}$$
 
 - **(b)** La variabile aleatoria è distribuita normalmente con
@@ -402,10 +408,8 @@ $$
     &= 1 - P(X\le 6) \\
     &= 1 - \Phi\!\left(\frac{6-5.2}{0.4}\right) \\
     &= 1 - \Phi(2) \\
-    &\approx 1 - 0.97725 \\
-    &= \boxed{0.02275}\;.
+    &\approx 1 - 0.97725
+    = \boxed{0.02275}\;.
     \end{aligned}$$
-
----
 
 <div style="page-break-after: always;"></div>

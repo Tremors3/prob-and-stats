@@ -29,6 +29,8 @@ Trova:
     \\&= \frac23 - \frac29 = \frac49 \approx \boxed{0.4444} \;.
     \end{aligned}$$
 
+<div style="page-break-after: always;"></div>
+
 - **(b)** Calcoliamo la funzione ripartizione (distribuzione) di $X$.
 
     - Caso $x<10$:
@@ -75,6 +77,8 @@ Trova:
     \frac1{3600}(x-10)^2 = 0.5
     $$
 
+    <div style="page-break-after: always;"></div>
+
     Troviamo le due soluzioni:
 
     $$\begin{aligned}
@@ -90,6 +94,8 @@ Trova:
     La mediana è la soluzione che appartiene al supporto della densità $[10, 70]$, cioè $\boxed{x = 52.43}\;.$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 2
 
@@ -128,6 +134,8 @@ Trova:
     $$
     \int_0^5 cx\cdot dx = c\int_0^5 x\cdot dx = c\left[\frac{x^2}2\right]_0^5 = \frac{25}2c
     $$
+
+    <div style="page-break-after: always;"></div>
 
     Calcoliamo il secondo integrale:
 
@@ -180,6 +188,8 @@ Trova:
         = \frac12
         \end{aligned}$$
 
+        <div style="page-break-after: always;"></div>
+
         Calcoliamo il secondo integrale:
 
         $$\begin{aligned}
@@ -227,6 +237,8 @@ Trova:
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 #### Esercizio 3
 
 Data la densità di $X$
@@ -267,6 +279,8 @@ calcolare:
         $$\begin{aligned}
         P(X > 0.6) = 1 - F(0.6) &= 1 - \frac12 + 0.6 - \frac{(0.6)^2}2 \\ &= 1 - 0.92 = \boxed{0.08} \;.
         \end{aligned}$$
+
+<div style="page-break-after: always;"></div>
 
 - **(b)** Calcolare la funzione distribuzione $F(x)$:
 
@@ -309,6 +323,8 @@ calcolare:
         \end{aligned}
         $$
 
+        <div style="page-break-after: always;"></div>
+
         Sommiamo le due componenti:
 
         $$\begin{aligned}
@@ -330,6 +346,8 @@ calcolare:
     } \;.$$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 4
 
@@ -371,6 +389,8 @@ trova:
         P(X > 0.8) = 1 - F(0.8) &= 1 - \frac54\left(0.8-\frac{0.8^5}5\right) \\ &= 1 - 0.91808 = \boxed{0.08192} \;.
         \end{aligned}$$
 
+<div style="page-break-after: always;"></div>
+
 - **(b)** Calcolare la funzione distribuzione $F(x)$:
 
     - Caso $0\le x<1$:
@@ -392,6 +412,8 @@ trova:
     } \;.$$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 > ### Funzione di ripartizione e intervalli separati
 >
@@ -433,6 +455,8 @@ trova:
 > Se $F(x)$ è definita a tratti, la derivata va calcolata separatamente in ciascun intervallo.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 > ### Trovare il fattore $\mathbf c$ di normalizzazione
 >

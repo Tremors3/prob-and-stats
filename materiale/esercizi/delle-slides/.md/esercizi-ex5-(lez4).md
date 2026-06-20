@@ -29,6 +29,8 @@ P(S\mid E) &= \frac{P(E\mid S)\cdot P(S)}{P(E)} \\
 &= \frac{0.50}{0.625} = \boxed{0.8} \;.
 \end{aligned}$$
 
+<div style="page-break-after: always;"></div>
+
 > **Nota**. Dati $A_1,A_2,\dots,A_n$ eventi **disgiunti due a due** ($A_i\cap A_j=\emptyset$) che compongono una **partizione** di $\Omega$ ($A_1\cup\dots\cup A_n = \Omega$). La formula della legge della probabilità totale dice che:
 >
 > $$\begin{aligned}
@@ -50,6 +52,8 @@ P(S\mid E) &= \frac{P(E\mid S)\cdot P(S)}{P(E)} \\
 > \end{aligned}$$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 2
 
@@ -90,6 +94,8 @@ P(N\mid M') = 0.99, &\qquad P(N\mid M) = 0.01
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 #### Esercizio 3
 
 In una regione una malattia colpisce il 4 per mille della popolazione. Un test è affidabile con probabilità 0.94 sui sani e 0.88 sui malati. Cioè: per un malato il test è postivo con probabilità 88%; per un sano il test è negativo con probabilità 0.94. Assumiamo che i test ripetuti siano indipendenti. Se due test su una persona sono risultati positivi, trova la probabilità che la persona sia malata.
@@ -129,6 +135,8 @@ P(M\mid N_1'\cap N_2') &= \frac{P(N_1'\cap N_2'\mid M)\cdot P(M)}{P(N_1'\cap N_2
 &= \frac{0.7744\cdot 0.004}{0.7744\cdot 0.004 + 0.0036\cdot 0.996} \approx \boxed{46.35\%} \;.
 \end{aligned}$$
 
+<div style="page-break-after: always;"></div>
+
 Il trucco sta nel formulare correttamente la probabilità richiesta e ricordarsi che i due test sono tra loro indipendenti.
 
 > **Nota**. Se $A$ e $B$ sono indipendenti, allora
@@ -138,6 +146,8 @@ Il trucco sta nel formulare correttamente la probabilità richiesta e ricordarsi
 > $$ P(A\cap B\mid M)=P(A\mid M)\cdot P(B\mid M) $$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 4
 
@@ -172,6 +182,8 @@ P(R_1\mid R_2') &= \frac{P(R_2'\mid R_1)\cdot P(R_1)}{P(R_2'\mid R_1)\cdot P(R_1
 \end{aligned}$$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 5
 

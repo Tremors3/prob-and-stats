@@ -40,6 +40,8 @@ $$
 p_X(k)=e^{-2}\frac{2^k}{k!}.
 $$
 
+<div style="page-break-after: always;"></div>
+
 Calcoliamo le probabilità necessarie:
 
 $$\begin{aligned}
@@ -141,13 +143,15 @@ P(X=6)
     P(X=6 \mid X \ge 4)
     $$
 
+    <div style="page-break-after: always;"></div>
+
     Per definizione:
 
     $$
     P(X=6 \mid X \ge 4)=\frac{P(X\ge4\mid X=6)P(X=6)}{P(X \ge 4)}.
     $$
 
-    La probabilità di avere almeno quattro neonati quando se ne hanno esattamente sei è 1. Cioè l’evento \(X=6\) implica automaticamente \(X \ge 4\), allora:
+    La probabilità di avere almeno quattro neonati quando se ne hanno esattamente sei è 1. Cioè \(X=6\) implica automaticamente \(X \ge 4\), allora:
 
     $$
     P(X\ge4\mid X=6) = 1
@@ -192,8 +196,6 @@ P(X=6)
     &= \frac{0.1490}{0.918815}
     \approx \boxed{0.1622}.
     \end{aligned}$$
-
----
 
 <div style="page-break-after: always;"></div>
 
@@ -345,6 +347,8 @@ $$
         &=(-9000)^2\cdot6 \\
         &=486\,000\,000.
         \end{aligned}$$
+
+        <div style="page-break-after: always;"></div>
 
         Infine:
 

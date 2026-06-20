@@ -34,6 +34,8 @@ P(C_2) = \text{"Probabilità che il 2° sistema si attivi"} = 0.95
         - $P(C_2\cap C_1') =$ "Solo il 2° si attiva"
         - $P(C_1\cap C_2) =$ "Entrambi si attivano"
         
+        <div style="page-break-after: always;"></div>
+
         Sommiamo le componenti:
 
         $$
@@ -70,6 +72,8 @@ P(C_2) = \text{"Probabilità che il 2° sistema si attivi"} = 0.95
     $$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 2
 
@@ -140,6 +144,8 @@ $$
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 #### Esercizio 3
 
 Un gene è composto di due alleli, ciascuno può essere di tipo $A$ oppure $a$. Nella popolazione vi sono 3 tipi di individui: di tipo $AA$, $Aa$, e $aa$. Ciascun genitore trasmette al figlio uno dei due alleli scelto a caso. Sapendo che inizialmente le proporzioni dei tre tipi sono:
@@ -181,6 +187,8 @@ $$
 P(AA)=P(A)^2=\left(\frac27\right)^2=\boxed{\frac{4}{49}} \;.
 $$
 
+<div style="page-break-after: always;"></div>
+
 - **Tipo $Aa$**
 
 $$
@@ -194,6 +202,8 @@ P(aa)=P(a)^2=\left(\frac57\right)^2=\boxed{\frac{25}{49}} \;.
 $$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 4
 
@@ -245,6 +255,8 @@ Il gruppo sanguigno $A$ può donare il sangue ad $A$, ad $AB$. Il gruppo $B$ pu�
     - $P(D\cap B) = P(D\mid B)\cdot P(B) = 0.10\cdot0.10 = 0.01$
     - $P(D\cap AB) = P(D\mid AB)\cdot P(AB) = 1.0\cdot0.20 = 0.20$
 
+    <div style="page-break-after: always;"></div>
+
     Somma ponderata della probabilità di donare ad un individuo a caso in base al gruppo sanguigno. Usiamo la **legge della probabilità totale**:
 
     $$\begin{aligned}
@@ -254,6 +266,8 @@ Il gruppo sanguigno $A$ può donare il sangue ad $A$, ad $AB$. Il gruppo $B$ pu�
     \end{aligned}$$
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 5
 

@@ -47,6 +47,8 @@ Si getta 12 volte una coppia di dadi equi e si osserva la somma delle due facce.
 
     dove $n=12$ è il numero di prove, $p=\frac5{36}$ è la probabilità di successo e $k$ è il numero di successi osservati.
 
+<div style="page-break-after: always;"></div>
+
 - **(a)** Calcoliamo la probabilità di ottenere esattamente 4 successi.
 
     $$\begin{aligned}
@@ -258,6 +260,8 @@ Trova:
     P(E)=P(E\mid A)P(A)+P(E\mid B)P(B).
     $$
 
+<div style="page-break-after: always;"></div>
+
 - **Calcolo di $P(E\mid A)$**
 
     Condizionatamente alla sorgente A, ogni bit ha probabilità $1/2$ di essere uguale a 1 e i 10 bit sono indipendenti.
@@ -345,6 +349,8 @@ Trova:
 > $$
 >
 > Questo ragionamento non è corretto. La sorgente viene scelta una sola volta all'inizio e tutti i 10 bit sono poi generati dalla stessa sorgente. Di conseguenza il modello corretto è una **miscela di due distribuzioni binomiali**, da combinare tramite la formula delle probabilità totali.
+
+<div style="page-break-after: always;"></div>
 
 > **Ripasso - Formule utili**
 >

@@ -42,7 +42,7 @@ $$
 P(A) = 1 - P(A') = \boxed{1 - \prod_{k=0}^{12-1} \frac{365-k}{365} \approx 0.17} \;.
 $$
 
----
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 3
 
@@ -79,6 +79,8 @@ $$
 > - $k$ = numero desiderato di elementi del primo tipo.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 #### Esercizio 4
 
