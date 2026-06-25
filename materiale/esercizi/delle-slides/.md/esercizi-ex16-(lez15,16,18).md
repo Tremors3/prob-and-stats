@@ -253,9 +253,9 @@ $$
     &=
     \frac23\cdot\frac12 \\
     &=
-    \boxed{\frac23}
+    \boxed{\frac13}
     \;\approx\;
-    0.6667
+    0.3333...
     \;.
     \end{aligned}$$
 
@@ -275,42 +275,57 @@ $$
     P(Y \le X+0.25)
     $$
 
-    Integrando la densità congiunta sulla regione definita da $y \le x+0.25$:
+    E' però più facile calcolare la probabilità dell'evento complementare:
+    
+    $$
+    P(Y > X + 0.25)
+    $$
+
+    che si verifica solamente se:
+
+    - $x$ varia tra $16$ e $16.75$ (poichè se $x>16.75$, allora $x+0.25>17$, e $Y$ non può superare $17$);
+
+    - $y$ varia da $x+0.25$ fino al limite superiore $17$.
+
+    $\,$
+
+    Integrando la densità congiunta sulle regioni definite:
 
     $$\begin{aligned}
     P(Y \le X+0.25)
-    &=
-    \int_{16}^{17}
-    \int_{15.5}^{x+0.25}
+    &= 1 - P(Y > X+0.25) \\
+    &= 1 - 
+    \int_{16}^{16.75}
+    \int_{x+0.25}^{17}
     f_{X,Y}(x,y)
     \,dy\,dx \\
-    &=
-    \int_{16}^{17}
-    \int_{15.5}^{x+0.25}
+    &= 1 - 
+    \int_{16}^{16.75}
+    \int_{x+0.25}^{17}
     \frac23
     \,dy\,dx \\
-    &=
-    \int_{16}^{17}
+    &= 1 - 
     \frac23
-    \Bigl((x+0.25)-15.5\Bigr)
+    \int_{16}^{16.75}
+    \Bigl(17 - (x + 0.25)\Bigr)
     \,dx \\
-    &=
+    &= 1 - 
     \frac23
-    \int_{16}^{17}
-    (x-15.25)
+    \int_{16}^{16.75}
+    (16.75 - x)
     \,dx \\
-    &=
+    &= 1 - 
     \frac23
     \left[
-    \frac{x^2}{2}-15.25x
-    \right]_{16}^{17} \\
+    16.75x - \frac{x^2}2
+    \right]_{16}^{16.75} \\
+    &= 1 - 
+    \frac23\cdot\frac9{32} \\
     &=
-    \frac23
-    (1.40625) \\
+    1 - \frac3{16} \\
     &=
-    0.9375 \\
-    &=
-    \boxed{\frac{15}{16}}
+    \boxed{\frac{13}{16}}
+    = 0.8125
     \;.
     \end{aligned}$$
 
