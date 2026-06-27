@@ -710,4 +710,15 @@ non è una trasformazione monotona su tutto il dominio, quindi non possiamo appl
 
 ---
 
+> **Nota.** Massimo e minimo (caso \(X_1, X_2\) indipendenti)
+> 
+> | Evento | Forma equivalente | Probabilità |
+> |--------|------------------|-------------|
+> | \(\max(X_1,X_2)\le z\) | \(X_1\le z \ \cap\ X_2\le z\) | \(P(X_1\le z)\,P(X_2\le z)\) |
+> | \(\max(X_1,X_2)\ge z\) | \(X_1\ge z \ \cup\ X_2\ge z\) | \(1 - P(X_1<z)P(X_2<z)\) |
+> | \(\min(X_1,X_2)\ge z\) | \(X_1\ge z \ \cap\ X_2\ge z\) | \(P(X_1\ge z)\,P(X_2\ge z)\) |
+> | \(\min(X_1,X_2)\le z\) | \(X_1\le z \ \cup\ X_2\le z\) | \(1 - P(X_1>z)P(X_2>z)\) |
+
+---
+
 <div style="page-break-after: always;"></div>
