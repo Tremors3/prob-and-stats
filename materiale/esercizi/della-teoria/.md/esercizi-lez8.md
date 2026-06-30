@@ -388,7 +388,7 @@ $$
     Dobbiamo risolvere il seguente integrale:
 
     $$
-    \int_0^{19} g(x) \cdot dx = \int_0^5 g(x) \cdot dx + \int_5^{10} g(x) \cdot dx
+    \int_0^{10} g(x) \cdot dx = \int_0^5 g(x) \cdot dx + \int_5^{10} g(x) \cdot dx
     $$
 
     Calcoliamo il primo integrale:
