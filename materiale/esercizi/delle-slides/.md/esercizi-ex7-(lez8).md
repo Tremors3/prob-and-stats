@@ -265,7 +265,7 @@ calcolare:
         P(X > 0.6) &= \int_{0.6}^1 (1-y)\cdot dy
         = \int_{0.6}^1 -(y-1)\cdot dy \\
         &= -\left[\frac{(y-1)^2}2\right]_{0.6}^1
-        = 0-\frac{(-0.4)^2}2 = \boxed{0.08} \;.
+        = -\left(0-\frac{(-0.4)^2}2\right) = \boxed{0.08} \;.
         \end{aligned}$$
 
     - **Seconda strada** (più lunga):
@@ -361,8 +361,8 @@ f(x) = \begin{cases}
 $$
 
 trova:
-(a) $P(X > 0.8)$;
-(b) la funzione distribuzione $F(x)$.
+- (a) $P(X > 0.8)$;
+- (b) la funzione distribuzione $F(x)$.
 
 ##### Risoluzione
 
